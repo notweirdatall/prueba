@@ -1,0 +1,26 @@
+body{
+
+	background-color: rgb(209,241,143);
+
+}
+
+#tituloPrincipal {
+	
+	text-align: center;
+	background-color: rgb(171,205,233);
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+}
+
+.descripcion {
+
+	padding-left: 50px;
+
+}
+
+h5 {
+
+	padding-left: 65px;
+
+}
