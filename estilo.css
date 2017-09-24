@@ -1,0 +1,39 @@
+h1 {
+
+	text-align: center;
+	color: blue;
+
+}
+
+#enviar {
+
+	display: block;
+	align-self: center;
+
+}
+
+#izquierda {
+
+	/*float: left;
+	width: 50%;
+	*/
+	display: inline-block;
+	width: 49.3%;
+
+}
+
+#derecha {
+
+	/*float: right;
+	width: 50%;
+	*/
+	display: inline-block;
+	width: 50.4%;
+
+}
+
+.boton{
+	/*clear: left;*/
+	display: block;
+	margin: auto;
+}

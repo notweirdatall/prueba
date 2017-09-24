@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>La Baticueva</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+	<div id="titulo">
+
+		<h1>Sistema de retiro de asignaturas</h1>
+
+		<button onclick="Retirar()" class="boton">Retirar materia</button>
+
+	</div>
+
+	<form action="" name="retiro" method="post" onsubmit="return validateForm()" id="forma" style="display:none" >
+
+		<!-- Seccion izquierda-->
+		<div id="izquierda">
+
+			
+				
+				<fieldset>
+
+					<legend>Datos del estudiante</legend>
+					
+					<label for="inputNombreEstudiante">Nombre: </label><br>
+					<input type="text" name="Nombre" id="inputNombreEstudiante" required>
+					<br><br>
+
+					<label for="inputApellido">Apellido: </label><br>
+					<input type="text" name="Apellido" id="inputApellido" required>
+					<br><br>
+
+					<label for="inputCedula">Cedula: </label><br>
+					<input type="text" name="Cedula" id="inputCedula" required>
+					<br><br>
+
+					<label for="inputCarrera">Carrera: </label><br>
+					<input type="text" name="Carrera" id="inputCarrera" required>
+					<br><br>
+
+					<label for="inputSemestre">Semestre: </label><br>
+					<input type="number" name="Semestre" id="inputSemestre" min="1" max="10" required>
+					<br><br>
+				
+				</fieldset>
+			
+
+		</div>
+
+		<!-- Seccion derecha-->
+		<div id="derecha">
+
+			
+			
+				
+				<fieldset>
+
+					<legend>Datos de la asignatura</legend>
+					
+					<label for="inputNombreAsignatura">Nombre de la asignatura: </label><br>
+					<input type="text" name="NombreAsignatura" id="inputNombreAsignatura" required>
+					<br><br>
+
+					<label for="inputCodigo">Codigo de la asignatura: </label><br>
+					<input type="text" name="Codigo" id="inputCodigo" required>
+					<br><br>
+
+					<label for="inputUC">U.C. de la asignatura: </label><br>
+					<input type="number" name="UC" id="inputUC" min="1" max="6" required>
+					<br><br>
+
+					<label for="inputMotivo">Motivo de retiro: </label><br>
+					<textarea name="Motivo" id="inputMotivo" rows="4" cols="30" required></textarea>
+					<br><br>
+
+					
+				</fieldset>
+			
+
+		</div>
+
+		<input type="submit" value="Procesar retiro" class="boton">
+
+	</form>
+
+	<script src="code.js"></script>
+</body>
+</html>
